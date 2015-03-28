@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Loser</string>
+
+    <string name="app_name">mechArmControl</string>
+    <string name="Greeting">Mechanical Arm Control</string>
+
+    <string name="rotation">Rotation</string>
+    <string name="clockwise">CW</string>
+    <string name="counterclockwise">CCW</string>
+
+    <string name="pivot">Pivot</string>
+    <string name="pivot_up">Up</string>
+    <string name="pivot_down">Down</string>
+
+    <string name="motor">Motor</string>
+    <string name="motor_on">Motor IN</string>
+    <string name="motor_off">Motor OUT</string>
+
+    <string name="suction">Suction</string>
+    <string name="suction_on">Suction ON</string>
+    <string name="suction_off">Suction OFF</string>
+
+    <string name="piston">Piston</string>
+    <string name="piston_up">Piston UP</string>
+    <string name="piston_down">Piston DOWN</string>
+
+
+</resources>

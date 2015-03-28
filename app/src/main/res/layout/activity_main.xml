@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <TextView
+        android:text="@string/Greeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/rotations"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="80dp">
+
+        <TextView android:text="@string/rotation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="40dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Button android:id="@+id/clockwise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clockwise"
+            android:gravity="start"
+            android:onClick="rotate_cw"/>
+
+        <Button android:id="@+id/counterclockwise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/counterclockwise"
+            android:gravity="start"
+            android:onClick="rotate_ccw"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pivots"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="80dp">
+
+    <TextView android:text="@string/pivot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingTop="40dp"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <Button android:id="@+id/pivot_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pivot_up"
+            android:gravity="end"
+            android:onClick="pivot_up"/>
+
+    <Button android:id="@+id/pivot_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pivot_down"
+            android:gravity="end"
+            android:onClick="pivot_down"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/suction"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="250dp">
+
+        <TextView android:text="@string/suction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="40dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Button android:id="@+id/suction_on"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/suction_on"
+            android:gravity="start"
+            android:onClick="suction_on"/>
+
+        <Button android:id="@+id/suction_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suction_off"
+            android:gravity="start"
+            android:onClick="suction_off"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pistons"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="250dp">
+
+        <TextView android:text="@string/piston"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingTop="40dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Button android:id="@+id/piston_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/piston_up"
+            android:gravity="end"
+            android:onClick="move_piston_up"/>
+
+        <Button android:id="@+id/piston_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/piston_down"
+            android:gravity="end"
+            android:onClick="move_piston_down"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/motor"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="350dp">
+
+        <TextView android:text="@string/motor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Button android:id="@+id/motor_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motor_on"
+            android:gravity="center_horizontal"
+            android:background="#80E680"
+            android:onClick="turn_motor_on"/>
+
+        <Button android:id="@+id/motor_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motor_off"
+            android:background="#FF704D"
+            android:gravity="center_horizontal"
+            android:onClick="turn_motor_off"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
